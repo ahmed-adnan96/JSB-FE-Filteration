@@ -1,0 +1,28 @@
+<section class="recipes py-5">
+    <div class="container-fluid">
+        <h2 class="h1 text-center">Recipes</h2>
+        <div class="container">
+                <div class="row g-4">
+                @for (meal of meals; track $index) {
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" [src]="meal.strMealThumb" [alt]="meal.strMeal" />
+                            <div class="card-body">
+                                <h4 class="card-title">{{meal.strMeal}}</h4>
+                                <p class="card-text">{{meal.strMeal}}</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                }
+
+                
+            </div>
+       
+             <button class="btn  me-auto "> Contact Us </button> 
+
+        </div>
+
+    </div>
+
+</section>

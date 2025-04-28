@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.text-brown{
+    color: #c98a40;
+}
+.contact {
+   
+  h2 {
+    font-family: "Sen", sans-serif;
+    font-weight: 800;
+    font-size: 144px;
+    line-height: 96%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #c98a40;
+  }
+  form {
+    input {
+      margin: 2% 0;
+      border-color: transparent;
+      background-color: #ffd39f;
+      box-shadow: unset !important;
+    }
+    button {
+      border-color: #c98a40;
+      border-radius: 61px;
+      border-width: 3px;
+      padding: 2% 4%;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  
+}
+footer{
+  background-color: #584125;
+}
+//media
+
+@media (max-width: 1220px) {
+  .contact {
+    h2 {
+      font-size: 100px !important;
+    }
+  }
+}
+@media (max-width: 780px) {
+  .contact {
+    h2 {
+      font-size: 50px !important;
+    }
+  }
+}

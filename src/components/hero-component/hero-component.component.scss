@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.hero-section{
+    background-image: url('../../../public/MaskGroup.png');
+    background-size: contain;
+  .header-hero , .second-hero{
+    background-color: #C98A40;
+    
+    color: #ffff;
+    font-family: "Sen", sans-serif;
+  }
+
+    .title-hero{
+        font-size: 28px;
+        width: 248px;
+        margin-top: 1.6rem;
+        transform: translateX(22rem);
+    }
+    p{
+     
+        width: 552px;
+    }
+    button{
+        background-color: #FDBA10;
+        border-radius: 30px;
+        color: #fff !important;
+    }
+
+    ul{
+        li{
+            color: #C98A40;
+        }
+    }
+    .bg-photo{
+        background-image: url('../../../public/MaskGroup2.png') !important;
+        background-size: contain;
+        background-color: #fff;
+        
+      
+    }
+ .img{
+    width: 45% !important;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, #F2A850 0%, rgba(228, 166, 92, 0) 35%) !important;
+  
+
+ }
+}
+
+// media 
+
+
+
+@media (max-width: 991.98px) {
+ 
+.title-hero{
+    transform: unset !important; 
+  
+}
+.main-caption-hero{
+    margin: unset !important;
+    width: 40% !important;
+}
+ul{
+    padding:  1rem 0 ;
+    width: 100%;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around ;
+    align-items: center;
+}
+.footer-hero{
+    text-align: center;
+}
+
+  }

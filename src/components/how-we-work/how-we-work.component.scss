@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
+
+.we-work {
+  position: relative;
+  h2 {
+    font-family: "Sen", sans-serif;
+    font-weight: 800;
+    font-size: 144px;
+    line-height: 96%;
+    letter-spacing: 0%;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  .min-hieght {
+min-height: 650px;
+  }
+  .part-bg-photo {
+    background-image: url("../../../public/MaskGroup.png");
+    background-size: 70%;
+    background-repeat: repeat;
+    background-position: 0% center;
+  }
+  .main-caption {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    color: #c98a40;
+  }
+  .part-bg-color {
+    font-family: "Sen", sans-serif;
+    font-weight: 800;
+    font-size: 9rem !important;
+    color: #ffff;
+    text-align: right;
+    background-color: #c98a40;
+  }
+  button {
+    background-color: #fdba10;
+    border-radius: 30px;
+    color: #fff !important;
+  }
+  .position {
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+  }
+  .img {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+// media
+@media (max-width: 768px) {
+  .main-caption {
+    margin-right: auto !important;
+  }
+  button {
+    margin: auto;
+  }
+  .position {
+    position: unset !important;
+    bottom: unset !important;
+    left: unset !important;
+    margin: auto;
+    .img {
+      width: 75%;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
