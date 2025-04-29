@@ -1,0 +1,15 @@
+<section class="details py-5">
+    <div class="container">
+            <div class="w-75 mx-auto border border-1 p-3 rounded shadow bg-light">
+
+                <div class="w-50 mx-auto">
+                    <img [src]="mealDetails.strMealThumb" class="img-fluid" [alt]="mealDetails.strMeal">
+                </div>
+                <p>
+                    {{mealDetails.strInstructions}}
+                </p>
+                   <button routerLink="/main-page" class="btn btn-danger">Back To Home </button>
+
+            </div>
+    </div>
+</section>

@@ -4,12 +4,14 @@ import { Meal } from '../../core/interfaces/meal';
 import { GetRecipService } from './../../core/services/get-recip.service';
 import { Component, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { Router } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'app-recipes',
 standalone : true,
-  imports: [NgxPaginationModule ],
+  imports: [NgxPaginationModule , RouterLink],
   templateUrl: './recipes.component.html',
   styleUrls: ['./recipes.component.scss']
 })
@@ -17,7 +19,7 @@ export class RecipesComponent implements OnInit {
 
   meals:Meal[] = [];
 
-  constructor( private  _GetRecipService:GetRecipService){}
+  constructor( private  _GetRecipService:GetRecipService , private _Router:Router){}
   ngOnInit(): void {
       this._GetRecipService.getRecipes().subscribe({
         next:(res)=>{
@@ -35,17 +37,10 @@ export class RecipesComponent implements OnInit {
       
   }
 
-getDescription(id:string):void{
-  this._GetRecipService.getDetailsMeal(id).subscribe({
-    next:(res)=>{
-      console.log(res);
-      
-    } , error:(err)=>{
-      console.log(err)
-    }
-  })
-}
 
+goToMealDetails(id:string):void{
+  this._Router.navigate(['/meal-details'])
+}
 
 
 }

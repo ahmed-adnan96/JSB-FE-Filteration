@@ -11,8 +11,8 @@
                                 <h4 class="card-title">{{meal.strMeal}}</h4>
                                 <p class="card-text">{{meal.strMeal}}</p>
                             </div>
+                            <button [routerLink]="['/details', meal.idMeal]" class="btn btn-warning w-50">View Details</button>
                         </div>
-                        
                     </div>
                 }
 

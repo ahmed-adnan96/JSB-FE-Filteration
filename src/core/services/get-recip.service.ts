@@ -14,9 +14,10 @@ export class GetRecipService {
 getRecipes():Observable<{meals: Meal[]}>{
   return this._HttpClient.get<{meals: Meal[]}>(enviroment.ApiRecip) ; 
 }
-getDetailsMeal(id:string):Observable<{meals:[{DescribtionMeal:string}]}>{
-  return this._HttpClient.get<{meals:[{DescribtionMeal:string}]}>(`enviroment.detailMealById${id}`)
+getDetailsMeal(id:number):Observable<{meals:any[]}>{
+  return this._HttpClient.get<{meals:any[]}>(enviroment.detailMealById+id)
 }
+
 
 
 }
